@@ -1,6 +1,6 @@
 # Pear Javascript Conventions
 
-See formatted gitbook [https://apparelmedia.github.io/pear-js-convention/]
+(See formatted gitbook)[https://apparelmedia.github.io/pear-js-convention/]
 
 ## To change this document:
 1. install gitbook-cli (`npm install -g gitbook-cli`)
