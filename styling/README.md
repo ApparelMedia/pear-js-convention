@@ -1,19 +1,19 @@
 # Styling
 
-## PHPStorm Style files
-Most of the styles can be quickly imported to your PHPStorm with these two files.
+All the rules below are enforced with ESLint.  So all you need to do is enable eslint in your editor of choice and let your IDE do all the work for you.
 
 ## Coding Best Practices
-1. React `props` should be defined in `propTypes`
-1. No unused variables in any scope
-1. use `let` or `const` for better variable management
+1. React `props` variables should be defined in static `propTypes`
+1. No unused variables in any scope ([Read More](http://eslint.org/docs/rules/no-unused-vars))
+1. use `let` or `const` for better variable management([Read More](http://eslint.org/docs/rules/no-var))
 1. Always lint before committing code
 
 ## Styles
-1. Prefer single quotes on string literals (and HTML attributes)
-1. Max length of 120 characters
-1. No Horizontal Alignment (See Notes below)
-1. All files end with a blank line
+1. We follow [JS Standard Style](http://standardjs.com/rules.html)!
+1. Prefer single quotes whenever possible (string literals and HTML attributes) ([Read More](http://eslint.org/docs/rules/jsx-quotes#prefer-single))
+1. Max length of 120 characters ([Read More](http://eslint.org/docs/rules/max-len))
+1. No Horizontal Alignment (See Section below)
+1. All files end with a blank line ([Read More](http://eslint.org/docs/rules/eol-last))
 
 ### No Horizontal Alignment
 
