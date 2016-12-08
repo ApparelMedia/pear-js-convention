@@ -3,4 +3,8 @@
 2. go to `hooks`.
 3. `mv pre-commit.sample pre-commit`
 4. delete all the content in `pre-commit` file and 
-5. add the line `yarn run lint` to the `pre-commit` file
+5. add the following lines to the `pre-commit` file:
+```
+#!/bin/sh
+yarn run lint
+```
