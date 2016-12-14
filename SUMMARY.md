@@ -9,3 +9,4 @@
   * [Project File Structure](redux/projectFileStructure.md)
   * [Src File Structure](redux/srcFileStructure.md)
   * [Naming Convention](redux/namingConvention.md) 
+  * [I Want To...](redux/commonTasks.md)
