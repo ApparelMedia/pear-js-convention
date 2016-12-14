@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>IDE Integration · GitBook</title>
+        <title>Redux · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../redux/" />
+    <link rel="next" href="projectFileStructure.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="../lint/ide.html" />
     
 
     </head>
@@ -115,9 +115,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../lint/">
             
-                <a href="./">
+                <a href="../lint/">
             
                     
                     Linting
@@ -129,9 +129,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="ide.html">
+        <li class="chapter " data-level="1.3.1" data-path="../lint/ide.html">
             
-                <a href="ide.html">
+                <a href="../lint/ide.html">
             
                     
                     IDE Integration
@@ -147,9 +147,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../redux/">
+        <li class="chapter active" data-level="1.4" data-path="./">
             
-                <a href="../redux/">
+                <a href="./">
             
                     
                     Redux
@@ -161,9 +161,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../redux/projectFileStructure.html">
+        <li class="chapter " data-level="1.4.1" data-path="projectFileStructure.html">
             
-                <a href="../redux/projectFileStructure.html">
+                <a href="projectFileStructure.html">
             
                     
                     Project File Structure
@@ -174,9 +174,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../redux/srcFileStructure.html">
+        <li class="chapter " data-level="1.4.2" data-path="srcFileStructure.html">
             
-                <a href="../redux/srcFileStructure.html">
+                <a href="srcFileStructure.html">
             
                     
                     Src File Structure
@@ -187,9 +187,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../redux/namingConvention.html">
+        <li class="chapter " data-level="1.4.3" data-path="namingConvention.html">
             
-                <a href="../redux/namingConvention.html">
+                <a href="namingConvention.html">
             
                     
                     Naming Convention
@@ -235,7 +235,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >IDE Integration</a>
+        <a href=".." >Redux</a>
     </h1>
 </div>
 
@@ -250,36 +250,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ide-integration">IDE Integration</h1>
-<h2 id="phpstorm">PHPStorm</h2>
-<p><img src="../static/images/phpstorm_error.jpg" alt="phpstorm error"></p>
-<ol>
-<li>download <code>/static/PHPStorm_Code_Inspector.xml</code> and <code>/static/PHPStorm_Code_Style_Javascript.xml</code> in <a href="https://github.com/ApparelMedia/pear-js-convention" target="_blank">this github repo</a>.</li>
-<li>import <code>PHPStorm_Code_Inspector.xml</code> to Preferences &gt; Editor &gt; Inspections in PHPStorm</li>
-<li>import <code>PHPStorm_Code_Style_Javascript.xml</code> to Preferences &gt; Editor &gt; Code Style &gt; Javascript</li>
-</ol>
-<p>To Import, navigate to the respective preference view, click on the &quot;Manage...&quot; button, then Import.
-All ESlint errors are now shown as inspection errors (with the red underline).
-You can simply press <code>alt+cmd+L</code> to auto format the current file, and will fix about 90% of eslint errors. </p>
-<h2 id="atom">Atom</h2>
-<p><img src="../static/images/atom_error.jpg" alt="atom error"></p>
-<ol>
-<li>install <code>linter-eslint</code> in atom preferences</li>
-<li>As you type, you&apos;ll see eslint errors</li>
-</ol>
-<h2 id="sublime-text">Sublime Text</h2>
-<ol>
-<li>install <a href="https://packagecontrol.io/packages/ESLint" target="_blank">Sublime Text ESLint Package</a> (follow instructions)
-Optionally install <code>https://packagecontrol.io/packages/ESLint-Formatter</code></li>
-</ol>
-<h2 id="visual-studio-code">Visual Studio Code</h2>
-<p><img src="../static/images/vscode_error.jpg" alt="vscode error"></p>
-<ol>
-<li>click on extensions and search for &quot;ESLint&quot;</li>
-<li>Download ESLint</li>
-<li>Click Reload</li>
-</ol>
-
+                                
                                 
                                 </section>
                             
@@ -306,12 +277,12 @@ Optionally install <code>https://packagecontrol.io/packages/ESLint-Formatter</co
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Linting">
+                <a href="../lint/ide.html" class="navigation navigation-prev " aria-label="Previous page: IDE Integration">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../redux/" class="navigation navigation-next " aria-label="Next page: Redux">
+                <a href="projectFileStructure.html" class="navigation navigation-next " aria-label="Next page: Project File Structure">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -322,7 +293,7 @@ Optionally install <code>https://packagecontrol.io/packages/ESLint-Formatter</co
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IDE Integration","level":"1.3.1","depth":2,"next":{"title":"Redux","level":"1.4","depth":1,"path":"redux/README.md","ref":"redux/README.md","articles":[{"title":"Project File Structure","level":"1.4.1","depth":2,"path":"redux/projectFileStructure.md","ref":"redux/projectFileStructure.md","articles":[]},{"title":"Src File Structure","level":"1.4.2","depth":2,"path":"redux/srcFileStructure.md","ref":"redux/srcFileStructure.md","articles":[]},{"title":"Naming Convention","level":"1.4.3","depth":2,"path":"redux/namingConvention.md","ref":"redux/namingConvention.md","articles":[]}]},"previous":{"title":"Linting","level":"1.3","depth":1,"path":"lint/README.md","ref":"lint/README.md","articles":[{"title":"IDE Integration","level":"1.3.1","depth":2,"path":"lint/ide.md","ref":"lint/ide.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lint/ide.md","mtime":"2016-11-29T17:29:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-14T19:37:51.612Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Redux","level":"1.4","depth":1,"next":{"title":"Project File Structure","level":"1.4.1","depth":2,"path":"redux/projectFileStructure.md","ref":"redux/projectFileStructure.md","articles":[]},"previous":{"title":"IDE Integration","level":"1.3.1","depth":2,"path":"lint/ide.md","ref":"lint/ide.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/README.md","mtime":"2016-12-14T16:11:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-14T19:37:51.612Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

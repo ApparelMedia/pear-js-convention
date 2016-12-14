@@ -1,0 +1,390 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Src File Structure · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="namingConvention.html" />
+    
+    
+    <link rel="prev" href="projectFileStructure.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../styling/">
+            
+                <a href="../styling/">
+            
+                    
+                    Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lint/">
+            
+                <a href="../lint/">
+            
+                    
+                    Linting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../lint/ide.html">
+            
+                <a href="../lint/ide.html">
+            
+                    
+                    IDE Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="projectFileStructure.html">
+            
+                <a href="projectFileStructure.html">
+            
+                    
+                    Project File Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="srcFileStructure.html">
+            
+                <a href="srcFileStructure.html">
+            
+                    
+                    Src File Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="namingConvention.html">
+            
+                <a href="namingConvention.html">
+            
+                    
+                    Naming Convention
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Src File Structure</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="src-file-structure"><code>src</code> File Structure</h1>
+<p><strong>All app-related files are located in <code>src</code> directory of the project</strong></p>
+<h2 id="anatomy-of-the-src-directory">Anatomy of the <code>src</code> directory</h2>
+<pre><code>src
+&#x251C;&#x2500;&#x2500; actions/      (All Actions)
+&#x251C;&#x2500;&#x2500; components/   (All Components)
+&#x251C;&#x2500;&#x2500; constants/    (App-related constants)
+&#x251C;&#x2500;&#x2500; containers/   (All Containers that are not tied to the routes)
+&#x251C;&#x2500;&#x2500; layouts/      (Layouts for nav outside of the route pages)
+&#x251C;&#x2500;&#x2500; reducers/     (All Reducers)
+&#x251C;&#x2500;&#x2500; routes/       (All Route pages)
+&#x251C;&#x2500;&#x2500; static/       (State files that will be copied to dist/ directory)
+&#x251C;&#x2500;&#x2500; store/        (Configuration directory to generate the Redux Store)
+&#x251C;&#x2500;&#x2500; styles/       (App-level styles, like sass variables)
+&#x251C;&#x2500;&#x2500; support/      (Helper functions)
+&#x251C;&#x2500;&#x2500; index.html    (Starter html file)
+&#x2514;&#x2500;&#x2500; main.js       (Entry javascript file)
+</code></pre><h2 id="actions-directory"><code>actions</code> directory</h2>
+<p>Actions in redux is not <em>really</em> tied to any other parts of the app.  This means that as long as you have access to the <code>dispatch</code> function from the <code>store</code>, you can dispatch an action.</p>
+<p>Actions, like any feature of Redux (javascript for that matter), can all be written in one file, but we will strive for better organization.</p>
+<p>I propose we group our actions in the intended objects.  For example, if the action type is <code>OPEN_MODAL</code>, then that action will be in <code>actions/modal.js</code>.</p>
+<blockquote>
+<p><strong>Note</strong>, even if there is no <code>modal</code> property in the state, the action file is still called <code>modal.js</code>. This is to highlight the fact that actions are not tied to the state at all.</p>
+</blockquote>
+<h2 id="constants-directory"><code>constants</code> directory</h2>
+<p>The files in the <code>constants</code> directory will always <code>export default</code> some data.</p>
+<p>The data outputed by the files are basically data that would be in the <code>state</code>, except these data will NOT change.</p>
+<p>One example is the steps/sequence to create a group.  No matter how the user interacts with the site, the number and sequence of the steps will not change.  Even if later on, the business wants the user <strong>to have the ability</strong> to change the number of steps to create a user, we can easily move the data to our state and add a reducer.</p>
+<h2 id="layouts-directory"><code>layouts</code> directory</h2>
+<p>TODO</p>
+<h2 id="reducers-directory"><code>reducers</code> directory</h2>
+<p>The name of the files in the <code>reducers</code> directory is tied to the name of the property in the state that they are responsible for.
+For example, if there is a <code>visibleModal</code> property in the state, then the file responsible for that property is called <code>reducers/visibleModal.js</code>.</p>
+<p>You can simply generate the reducer by using <code>plop</code>.  It will add a default file in <code>reducers</code> and add the reducer to <code>combineReducers</code> function in the <code>store/reducers.js</code> file.</p>
+<h2 id="routes-directory"><code>routes</code> directory</h2>
+<p>TODO</p>
+<h2 id="static-directory"><code>static</code> directory</h2>
+<p>This is the directory that houses all the files that are related to the app and will be copied to the <code>/dist</code> directory when we run <code>yarn run deploy:prod</code>.</p>
+<h2 id="store-directory"><code>store</code> directory</h2>
+<p>There are only two files in the <code>store</code> directory, and there shouldn&apos;t be any more.  The goal of the store directory is to isolate the responsibility to create a Redux <code>store</code>.</p>
+<p>The <code>reducers.js</code> file generates and exports a reducer function by utilizing the <code>combineReducers</code> convenience function.</p>
+<p>The <code>createStore.js</code> file exports the <code>store</code>.</p>
+<h2 id="styles-directory"><code>styles</code> directory</h2>
+<p>The <code>styles</code> directory has all the scss files that hold top-level styles and global variables for our components.<br>All the files in the <code>styles</code> directory can be available from within the components&apos; scss files by doing <code>@import</code> inside of the component scss files like so:</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;~styles/variables/colors&apos;</span>;  <span class="hljs-comment">/* importing /src/styles/variables/colors.scss */</span>
+</code></pre>
+<blockquote>
+<p><em>Note</em> The <code>~</code> in the <code>@import</code> string is the symbol that signifies that the string is a relative path, then webpack does the rest to resolve the path.</p>
+</blockquote>
+<h2 id="support-directory"><code>support</code> directory</h2>
+<p>The goal of the <code>support</code> directory is to have a collection of helper functions that can be accessible globally.  They are mostly convenience functions.</p>
+<h2 id="indexhtml-file"><code>index.html</code> file</h2>
+<p>This is the starting html where all the javascript is loaded and executed.</p>
+<p>This file is copied to /dist/ directory when we run <code>yarn run deploy:prod</code>.</p>
+<p>This file is also the template or guide in which we should model after the html served the server framework if we are integrating the react app inside one.</p>
+<h2 id="mainjs-file"><code>main.js</code> file</h2>
+<p><code>main.js</code> is the entry point of the React/Redux app.
+The file grabs the <code>initialState</code> and creates the <code>store</code>, bootstraps the rest of the app and enable extensions based on environment (production or dev).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="projectFileStructure.html" class="navigation navigation-prev " aria-label="Previous page: Project File Structure">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="namingConvention.html" class="navigation navigation-next " aria-label="Next page: Naming Convention">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Src File Structure","level":"1.4.2","depth":2,"next":{"title":"Naming Convention","level":"1.4.3","depth":2,"path":"redux/namingConvention.md","ref":"redux/namingConvention.md","articles":[]},"previous":{"title":"Project File Structure","level":"1.4.1","depth":2,"path":"redux/projectFileStructure.md","ref":"redux/projectFileStructure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/srcFileStructure.md","mtime":"2016-12-14T17:26:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-14T19:37:51.612Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
